@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Offline | ShopPWA</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="offline-container">
+    <h1>You're Offline</h1>
+    <p>Some features may not be available.</p>
+    <p>Here are products you've recently viewed:</p>
+    <div id="offline-products"></div>
+    <button onclick="window.location.reload()">Retry Connection</button>
+  </div>
+  <script src="/scripts/offline.js"></script>
+</body>
+</html>

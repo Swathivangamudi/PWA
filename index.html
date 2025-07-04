@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopPWA</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4a90e2">
+</head>
+<body>
+  <header>
+    <h1>ShopPWA</h1>
+    <button id="cart-button" class="cart">🛒 <span id="cart-count">0</span></button>
+  </header>
+
+  <div id="loading" style="display: none; text-align: center; padding: 20px;">
+    Loading products...
+  </div>
+    <!-- Cart button -->
+
+  <main id="products-container">
+    <!-- Products will be rendered here -->
+  </main>
+
+  <div id="offline-banner" class="offline-banner" style="display:none;">
+    You're offline. Showing cached products.
+  </div>
+
+  <!-- Cart Modal (unchanged) -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">₹0</span></p>
+    <button id="close-cart">Continue Shopping</button>
+  </div>
+  </div>
+
+
+  <!-- Add this before closing </body> tag -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">₹0</span></p>
+    <button id="close-cart">Continue Shopping</button>
+  </div>
+</div>
+  <script src="/scripts/app.js"></script>
+</body>
+</html>
